@@ -9,33 +9,76 @@
         #modal:target {
             display: flex;
         }
+
+        .label-link {
+            float: right;
+            font-size: 12px;
+        }
+
+        .HeaderMenu-link {
+         position: absolute;
+            right: 20px; 
+            top: 10px; 
+        }
+        .HeaderMenu-link {
+        text-decoration: none;
+        }
+
+        .agreement {
+         margin: .24rem 0 .4rem;
+         color: var(--text-3-color);
+         font-size: .22rem;
+         text-align: center;
+        }
+
+        *, *:before, *:after {
+    box-sizing: inherit;
+        }
+
+        div {
+    display: block;
+    unicode-bidi: isolate;
+        }
+
+        .agreement {
+    margin: .24rem 0 .4rem;
+    color: var(--text-3-color);
+    font-size: .6rem;
+    text-align: center;
+}
+
     </style>
 </head>
 <body class="bg-gray-100 p-6">
     <div class="max-w-4xl mx-auto">
-        <h1  class="font-serif text-center font-semibold h-20 text-cyan-700 text-6xl">SINK R US</h1>
+        <h1  class="bg-orange-300 h-5">DI NA TO NEED EH WANT MO ALISIN?</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-cyan-200 shadow-2xl shadow-grey-900 rounded-lg p-6">
-                <h2 class="font-serif font-semibold md-5 text-2xl">Employee's List</h2>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Employee List</h2>
                 <p class="text-gray-700 mb-4">LAGAYAN NG EMPLOYEE LIST</p>
-                <a href="#modal" class="font-serif text-white px-4 py-2 rounded bg-cyan-700">LIST</a>
+                <a href="#modal" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">MODAL</a>
             </div>
 
-
-            <div class="bg-cyan-200 shadow-2xl shadow-grey-900 rounded-lg p-6">
-                <h2 class="font-serif text-2xl font-semibold mb-4">Employee</h2>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
                 <form>
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-serif" for="name">Email or Username</label>
-                        <input type="email" id="email or username" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Email or Username" required>
+                        <label class="block text-gray-700" for="name">Email or Username</label>
+                        <input type="text" id="name" class="border rounded-lg w-full py-2 px-3" placeholder="Insert your Email or Username" required>
                     </div>
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-serif" for="email">Password</label>
-                        <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Password" required>
+                        <label class="block text-gray-700" for="email">Password</label>
+                        <input type="email" id="email" class="border rounded-lg w-full py-2 px-3" placeholder="Insert your Password" required>
                     </div>
                     
-                    <button type="submit" class="font-serif bg-cyan-700 text-white px-4 py-2 rounded">Sign In</button>
+                    <div class="mb-4"> <!-- DI KAILANGAN TO EH TINGEN MO ALISIN NA LANG? -->
+                        <label class="block text-gray-700" for="message">Message</label>
+                        <textarea id="message" class="border rounded-lg w-full py-2 px-3" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Send Message</button>
+                <!-- IF ALSIN HANGGANG DITO LANG-->
+                
                 </form>
             </div>
         </div>
@@ -43,13 +86,108 @@
         <!-- Modal -->
         <div id="modal" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
             <div class="bg-white rounded-lg p-6">
-                <h2 class="font-serif font-semibold h-10">Employee</h2>
+                <h2 class="text-lg font-semibold">Modal Title</h2>
 
 
         <!-- LAGAYAN NG LOOB NG MODAL -->
-                <a href="#" class="mt-4 bg-cyan-700 text-white px-4 py-2 rounded">Close</a>
+                <p>LAGAYAN NG MODALS</p>
+                <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    body {
+        background-color: #eef2f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .Container-Login {
+        width: 400px;
+        background-color: rgb(8, 6, 6);
+        border-radius: 10px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        perspective: 1000px
+    }
+    .container {
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        perspective: 1000px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+    button:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transition: transform 0.6s ease;
+        transform: translate(-50%, -50%) scale(0);
+        z-index: 0;
+    }
+    button:hover:before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .toggle-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .toggle-panel {
+        flex: 1;
+        padding: 20px; 
+        background-color: #f9f9f9;
+        transition: background-color 0.3s;
+    }
+    .toggle-left {
+        border-right: 1px solid #ddd;
+    }
+    .toggle h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #0056b3;
+    }
+    
