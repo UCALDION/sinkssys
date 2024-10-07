@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Complex Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #modal:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1  class="font-serif text-center font-semibold h-20 text-cyan-700 text-6xl">SINK R US</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-cyan-200 shadow-2xl shadow-grey-900 rounded-lg p-6">
+                <h2 class="font-serif font-semibold md-5 text-2xl">Employee's List</h2>
+                <p class="text-gray-700 mb-4">LAGAYAN NG EMPLOYEE LIST</p>
+                <a href="#modal" class="font-serif text-white px-4 py-2 rounded bg-cyan-700">LIST</a>
+            </div>
+
+
+            <div class="bg-cyan-200 shadow-2xl shadow-grey-900 rounded-lg p-6">
+                <h2 class="font-serif text-2xl font-semibold mb-4">Employee</h2>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-serif" for="name">Email or Username</label>
+                        <input type="email" id="email or username" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Email or Username" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-serif" for="email">Password</label>
+                        <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="font-serif bg-cyan-700 text-white px-4 py-2 rounded">Sign In</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div class="bg-white rounded-lg p-6">
+                <h2 class="font-serif font-semibold h-10">Employee</h2>
+
+
+        <!-- LAGAYAN NG LOOB NG MODAL -->
+                <a href="#" class="mt-4 bg-cyan-700 text-white px-4 py-2 rounded">Close</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
