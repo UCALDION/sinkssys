@@ -24,116 +24,138 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Employee 1 -->
-                        <tr>
-                            <td class="px-4 py-2">Viernes</td>
-                            <td class="px-4 py-2">Aldion</td>
-                            <td class="px-4 py-2">+63927-0440-596</td>
-                            <td class="px-4 py-2">aldion@gmail.com</td>
-                            <td class="px-4 py-2">Web Dev</td>
-                            <td class="px-4 py-2">
-                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-1">View</button>
-                            </td>
+                       
+                        <tr> <!---Employee 1-->
+                            <th scope="row" class="px-4 py-3 font-serif whitespace-nowrap">Ivan Petrov</th>
+                            <td class="px-6 py-4 font-serif">Software Engineer</td>
+                            <td class="px-6 py-4 font-serif">IT</td>
+                            <td class="px-6 py-4 font-serif">ivan.petrov@sinksrus.com</td>
+                            <td class="px-6 py-4 font-serif">555-6789</td>
+                        <td>
+                            <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-1">View</button>
+                        </td>
                         </tr>
 
-                        <!-- Employee 2 -->
-                        <tr>
-                            <td class="px-4 py-2">Col</td>
-                            <td class="px-4 py-2">Nago</td>
-                            <td class="px-4 py-2">123456</td>
-                            <td class="px-4 py-2">ColNago@gmail.com</td>
-                            <td class="px-4 py-2">Project Manager</td>
-                            <td class="px-4 py-2">
-                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-2">View</button>
-                            </td>
+                        <tr> <!-- Employee 2 -->
+                            <th scope="row" class="px-6 py-3 font-serif whitespace-nowrap">Pedro Los Banos</th>
+                            <td class="px-6 py-4 font-serif">Marketing Manager</td>
+                            <td class="px-6 py-4 font-serif">Marketing</td>
+                            <td class="px-6 py-4 font-serif">pedro_los_banos@sinksrus.com</td>
+                            <td class="px-6 py-4 font-serif"></td>
+                        <td>
+                            <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-2">View</button>
+                        </td>
                         </tr>
 
-                        <!-- Employee 3 -->
-                        <tr>
-                            <td class="px-4 py-2">Es</td>
-                            <td class="px-4 py-2">Ram</td>
-                            <td class="px-4 py-2">123456</td>
-                            <td class="px-4 py-2">EsRam@gmail.com</td>
-                            <td class="px-4 py-2">UI/UX Designer</td>
-                            <td class="px-4 py-2">
-                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-3">View</button>
-                            </td>
+                        <tr> <!-- Employee 3 -->
+                            <th scope="row" class="px-6 py-3 font-serif whitespace-nowrap">Ana Gomez</th>
+                            <td class="px-6 py-4 font-serif">HR Specialist</td>
+                            <td class="px-6 py-4 font-serif">HR</td>
+                            <td class="px-6 py-4 font-serif">ana.gomez@sinksrus.com</td>
+                            <td class="px-6 py-4 font-serif">555-1526</td>
+                        <td>
+                            <button class="bg-cyan-700 text-white px-2 py-2 rounded" data-toggle="modal" data-target="#modal-3">View</button>
+                        </td>
                         </tr>
 
-                        <!-- Employee 4 -->
-                        <tr>
-                            <td class="px-4 py-2">Shim</td>
-                            <td class="px-4 py-2">Mano</td>
-                            <td class="px-4 py-2">123456</td>
-                            <td class="px-4 py-2">ShimMano@gmail.com</td>
-                            <td class="px-4 py-2">Software Engineer</td>
-                            <td class="px-4 py-2">
-                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-4">View</button>
-                            </td>
+                        <tr> <!-- Employee 4 -->
+                            <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">John Wu</th>
+                            <td class="px-6 py-4 font-serif">Sales Associate</td>
+                            <td class="px-6 py-4 font-serif">Sales</td>
+                            <td class="px-6 py-4 font-serif">john.wu@sinksrus.com</td>
+                            <td class="px-6 py-4 font-serif">555-6925</td>
+                        <td>
+                            <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-4">View</button>
+                        </td>
                         </tr>
-                    </tbody>
-                </table>
+
+                        <tr> <!-- Employee 5 -->
+                            <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">Emma Wilson</th>
+                            <td class="px-6 py-4 font-serif">CEO</td>
+                            <td class="px-6 py-4 font-serif">Admin</td>
+                            <td class="px-6 py-4 font-serif">emma@sinksrus.com</td>
+                             <td class="px-6 py-4 font-serif">555-1111</td>
+                        <td>
+                            <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-5">View</button>
+                        </td>
+                        </tr>
+                            <!-- MODAL EMPLOYEES  -->
+                            <!-- Modal Employee 1 -->
+            <div id="modal-1" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-xl font-semibold font-serif mb-4">Employee Details</h2>
+                        <p class="font-serif font-semibold">Name: Ivan Petrov</p>
+                        <p class="font-serif font-semibold">Job Title: Software Engineer</p>
+                        <p class="font-serif font-semibold">Department: IT </p>
+                        <p class="font-serif font-semibold">Email: ivan.petrov@sinksrus.com</p>
+                        <p class="font-serif font-semibold">Contact no.: 555-6789</p>
+                        <p class="font-serif font-semibold">Address: 12 Red Square, Moscow</p>
+                        <p class="font-serif font-semibold">Sex: Male</p>
+                        <p class="font-serif font-semibold">Marital Status: Single</p>
+                        <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+                </div>
             </div>
-        </div>
-    </div>
-<!-- MODAL EMPLOYEES  -->
-
-    <!-- Modal Employee 1 -->
-    <div id="modal-1" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
-            <p>Surname: Viernes</p>
-            <p>First name: Aldion</p>
-            <p>Phone Number: +63927-0440-596</p>
-            <p>Email: aldion@gmail.com</p>
-            <p>Status: Active</p>
-            <p>Salary: 12345</p>
-            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
-        </div>
-    </div>
-
-    <!-- Modal Employee 2 -->
-    <div id="modal-2" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
-            <p>Surname: Smith</p>
-            <p>First name: </p>
-            <p>Phone Number: </p>
-            <p>Email: </p>
-            <p>Status: Active</p>
-            <p>Salary: 12345</p>
-            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
-        </div>
-    </div>
-
-    <!-- Modal for Employee 3 -->
-    <div id="modal-3" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
-            <p>Surname: Garcia</p>
-            <p>First name: </p>
-            <p>Phone Number: </p>
-            <p>Email: </p>
-            <p>Status: Active</p>
-            <p>Salary: 12345</p>
-            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
-        </div>
-    </div>
-
-    <!-- Modal for Employee 4 -->
-    <div id="modal-4" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
-            <p>Surname: Tanaka</p>
-            <p>First name: </p>
-            <p>Phone Number: </p>
-            <p>Email: </p>
-            <p>Status: Active</p>
-            <p>Salary: 12345</p>
-            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
-        </div>
-    </div>
-
+                                        
+                                    <!-- Modal Employee 2 -->
+            <div id="modal-2" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-xl font-semibold font-serif mb-4">Employee Details</h2>
+                        <p class="font-serif font-semibold">Name: Pedro Los Banos</p>
+                        <p class="font-serif font-semibold">Job Title: Marketing Manager</p>
+                        <p class="font-serif font-semibold">Department: Marketing</p>
+                        <p class="font-serif font-semibold">Email: pedro_los_banos@sinksrus.com</p>
+                        <p class="font-serif font-semibold">Contact no.:</p>
+                        <p class="font-serif font-semibold">Address: 123 Mabini St.</p>
+                        <p class="font-serif font-semibold">Sex: Male</p>
+                        <p class="font-serif font-semibold">Marital Status: Married</p>
+                        <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+                                <!-- Modal Employee 3 -->
+            <div id="modal-3" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-xl font-semibold font-serif mb-4">Employee Details</h2>
+                        <p class="font-serif font-semibold">Name: Ana Gomez</p>
+                        <p class="font-serif font-semibold">Job Title: HR Specialist</p>
+                        <p class="font-serif font-semibold">Department: HR</p>
+                        <p class="font-serif font-semibold">Email: ana.gomez@sinksrus.com</p>
+                        <p class="font-serif font-semibold">Contact no.: 555-1526</p>
+                        <p class="font-serif font-semibold">Address: </p>
+                        <p class="font-serif font-semibold">Sex: Female</p>
+                        <p class="font-serif font-semibold">Marital Status: Divorced</p>
+                        <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+                            <!-- Modal Employee 4 -->
+            <div id="modal-4" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-xl font-semibold font-serif mb-4">Employee Details</h2>
+                        <p class="font-serif font-semibold">Name: John Wu</p>
+                        <p class="font-serif font-semibold">Job Title: Sales Associate</p>
+                        <p class="font-serif font-semibold">Department: Sales</p>
+                        <p class="font-serif font-semibold">Email: john.wu@sinksrus.com</p>
+                        <p class="font-serif font-semibold">Contact no.: 555-6925</p>
+                        <p class="font-serif font-semibold">Address: 456 Rizal St.</p>
+                        <p class="font-serif font-semibold">Sex: Male</p>
+                        <p class="font-serif font-semibold">Marital Status: Single</p>
+                        <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+                            <!-- Modal Employee 5 -->
+            <div id="modal-5" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-xl font-semibold font-serif mb-4">Employee Details</h2>
+                        <p class="font-serif font-semibold">Name: Emma Wilson</p>
+                        <p class="font-serif font-semibold">Job Title: CEO</p>
+                        <p class="font-serif font-semibold">Department: Admin</p>
+                        <p class="font-serif font-semibold">Email: emma@sinksrus.com</p>
+                        <p class="font-serif font-semibold">Contact no.: 555-1111</p>
+                        <p class="font-serif font-semibold">Address: </p>
+                        <p class="font-serif font-semibold">Sex: Female</p>
+                        <p class="font-serif font-semibold">Marital Status: Married</p>
+                        <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
     <script>
     // Modal JS ISSUE KO DITO DI KO MALIPAT SA JS SCRIPT TA DI SYA NAGANA PERO PAG NANDITO SA HTML FILE NAGANA NAMAN DITO NA MUNA SIGURO
     const openModal = (modalId) => {
