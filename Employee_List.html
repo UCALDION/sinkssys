@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sink R Us - Employees</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="font-serif text-center font-semibold h-20 text-cyan-700 text-6xl">Employee's List</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-6">
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Surname</th>
+                            <th class="px-4 py-2">First name</th>
+                            <th class="px-4 py-2">Phone Number</th>
+                            <th class="px-4 py-2">Email</th>
+                            <th class="px-4 py-2">Role</th>
+                            <th class="px-4 py-2">More Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Employee 1 -->
+                        <tr>
+                            <td class="px-4 py-2">Viernes</td>
+                            <td class="px-4 py-2">Aldion</td>
+                            <td class="px-4 py-2">+63927-0440-596</td>
+                            <td class="px-4 py-2">aldion@gmail.com</td>
+                            <td class="px-4 py-2">Web Dev</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-1">View</button>
+                            </td>
+                        </tr>
+
+                        <!-- Employee 2 -->
+                        <tr>
+                            <td class="px-4 py-2">Col</td>
+                            <td class="px-4 py-2">Nago</td>
+                            <td class="px-4 py-2">123456</td>
+                            <td class="px-4 py-2">ColNago@gmail.com</td>
+                            <td class="px-4 py-2">Project Manager</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-2">View</button>
+                            </td>
+                        </tr>
+
+                        <!-- Employee 3 -->
+                        <tr>
+                            <td class="px-4 py-2">Es</td>
+                            <td class="px-4 py-2">Ram</td>
+                            <td class="px-4 py-2">123456</td>
+                            <td class="px-4 py-2">EsRam@gmail.com</td>
+                            <td class="px-4 py-2">UI/UX Designer</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-3">View</button>
+                            </td>
+                        </tr>
+
+                        <!-- Employee 4 -->
+                        <tr>
+                            <td class="px-4 py-2">Shim</td>
+                            <td class="px-4 py-2">Mano</td>
+                            <td class="px-4 py-2">123456</td>
+                            <td class="px-4 py-2">ShimMano@gmail.com</td>
+                            <td class="px-4 py-2">Software Engineer</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-4">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<!-- MODAL EMPLOYEES  -->
+
+    <!-- Modal Employee 1 -->
+    <div id="modal-1" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
+            <p>Surname: Viernes</p>
+            <p>First name: Aldion</p>
+            <p>Phone Number: +63927-0440-596</p>
+            <p>Email: aldion@gmail.com</p>
+            <p>Status: Active</p>
+            <p>Salary: 12345</p>
+            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal Employee 2 -->
+    <div id="modal-2" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
+            <p>Surname: Smith</p>
+            <p>First name: </p>
+            <p>Phone Number: </p>
+            <p>Email: </p>
+            <p>Status: Active</p>
+            <p>Salary: 12345</p>
+            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for Employee 3 -->
+    <div id="modal-3" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
+            <p>Surname: Garcia</p>
+            <p>First name: </p>
+            <p>Phone Number: </p>
+            <p>Email: </p>
+            <p>Status: Active</p>
+            <p>Salary: 12345</p>
+            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for Employee 4 -->
+    <div id="modal-4" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+            <h2 class="text-xl font-semibold mb-4">Employee Details</h2>
+            <p>Surname: Tanaka</p>
+            <p>First name: </p>
+            <p>Phone Number: </p>
+            <p>Email: </p>
+            <p>Status: Active</p>
+            <p>Salary: 12345</p>
+            <button class="bg-cyan-700 text-white px-4 py-2 rounded mt-4" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+    // Modal JS ISSUE KO DITO DI KO MALIPAT SA JS SCRIPT TA DI SYA NAGANA PERO PAG NANDITO SA HTML FILE NAGANA NAMAN DITO NA MUNA SIGURO
+    const openModal = (modalId) => {
+        document.getElementById(modalId).classList.remove('hidden');
+    };
+
+    const closeModal = () => {
+        document.querySelectorAll('.modal').forEach(modal => modal.classList.add('hidden'));
+    };
+
+    document.querySelectorAll('[data-toggle="modal"]').forEach(button => {
+        button.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-target').substring(1);
+            openModal(modalId);
+        });
+    });
+    </script>
+</body>
+</html>
