@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sink R Us - Employees</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="sink.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 p-6">
     <div class="max-w-4xl mx-auto">
         <h1 class="font-serif text-center font-semibold h-20 text-cyan-700 text-6xl">Employee's List</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="p-6">
-                <table class="w-full">
-                    <thead>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-bl-100 dark:text-blue-100">
+                    <thead class="text-xs text-white uppercase bg-cyan-600 dark:text-white">
                         <tr>
-                            <th class="px-4 py-2">Surname</th>
-                            <th class="px-4 py-2">First name</th>
-                            <th class="px-4 py-2">Phone Number</th>
-                            <th class="px-4 py-2">Email</th>
-                            <th class="px-4 py-2">Role</th>
-                            <th class="px-4 py-2">More Info</th>
+                            <th scope="col" class="px-6 py-3">Name</th>
+                            <th scope="col" class="px-6 py-3">Job Title</th>
+                            <th scope="col" class="px-6 py-3">Department</th>
+                            <th scope="col" class="px-6 py-3">Email</th>
+                            <th scope="col" class="px-6 py-3">Role</th>
+                            <th scope="col" class="px-6 py-3">More Info</th>
                         </tr>
                     </thead>
                     <tbody>
