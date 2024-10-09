@@ -10,40 +10,40 @@
 </head>
 <body class="bg-gray-100 p-6">
     <div class="max-w-4xl mx-auto">
-        <h1 class="font-calibri text-center font-semibold h-20 text-cyan-700 text-6xl">SINK R US</h1>
+        <h1 class="font-serif text-center font-semibold h-20 text-cyan-700 text-6xl">SINK R US</h1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-cyan-200 shadow-2xl shadow-gray-900 rounded-lg p-6"> 
-                <h2 class="font-calibri font-calibri mb-5 text-2xl">EMPLOYEE'S LIST</h2>
-                <button class="font-calibri text-white px-4 py-2 rounded bg-cyan-700" data-toggle="modal" data-target="#modal">
+                <h2 class="font-serif font-serif mb-5 text-2xl">EMPLOYEE'S LIST</h2>
+                <button class="font-serif text-white px-4 py-2 rounded bg-cyan-700" data-toggle="modal" data-target="#modal">
                     LIST
                 </button>
             </div>
             
             <div class="bg-cyan-200 shadow-2xl shadow-gray-900 rounded-lg p-6">
-                <h2 class="font-calibri text-2xl font-calibri mb-4">Sign In</h2>
+                <h2 class="font-serif text-2xl font-serif mb-4">Sign In</h2>
                 <form onsubmit="handleLogin(event)">
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-calibri" for="email-or-username">Email or Username</label>
-                        <input type="text" id="email-or-username" class="border rounded-lg w-full py-2 px-3 font-calibri" placeholder="Email or Username" required>
+                        <label class="block text-gray-700 font-serif" for="email-or-username">Email or Username</label>
+                        <input type="text" id="email-or-username" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Email or Username" required>
                     </div>
                     <div class="mb-4 relative">
-                        <label class="block text-gray-700 font-calibri" for="password">Password</label>
-                        <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 font-calibri" placeholder="Password" required>
+                        <label class="block text-gray-700 font-serif" for="password">Password</label>
+                        <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 font-serif" placeholder="Password" required>
                     </div>
                     
                     <div class="flex justify-end mb-1 position-absolute top-0 right-3">
-                        <a class="text-sm text-blue-600 font-calibri " id="forgot-password" href="/password_reset">Forgot password?</a>
+                        <a class="text-sm text-blue-600 font-serif " id="forgot-password" href="/password_reset">Forgot password?</a>
                     </div>
 
-                    <button type="submit" class="font-calibri bg-cyan-700 text-white px-4 py-2 rounded">Sign In</button>
+                    <button type="submit" class="font-serif bg-cyan-700 text-white px-4 py-2 rounded">Sign In</button>
 
                     <a class="block mt-4">
-                        <button type="button" class="font-calibri bg-cyan-700 text-white px-4 py-2 rounded">Register</button>
+                        <button type="button" class="font-serif bg-cyan-700 text-white px-4 py-2 rounded">Register</button>
                     </a>
                     <div class="agreement mt-4">
-                        <a href="" class="font-calibri text-blue-600">Terms of Service</a>
-                        <a href="" class="font-calibri text-blue-600">Privacy Policy</a>
+                        <a href="" class="font-serif text-blue-600">Terms of Service</a>
+                        <a href="" class="font-serif text-blue-600">Privacy Policy</a>
                     </div>
                 </form>
             </div>
@@ -51,7 +51,7 @@
         <!-- Employee's Modal -->
         <div id="modal" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-50 flex items-center justify-center p-4">
             <div class="bg-white rounded-lg p-6 relative w-full max-w-4xl mx-auto">
-                <h1 class="font-calibri text-center font-calibri text-cyan-700 text-4xl mb-4">Employee's List</h1>
+                <h1 class="font-serif text-center font-serif text-cyan-700 text-4xl mb-4">Employee's List</h1>
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table class="w-full text-sm text-left text-black">
                         <thead class="text-xs text-white uppercase bg-cyan-600">
@@ -66,52 +66,52 @@
                         </thead>
                         <tbody>
                             <tr class="bg-white border-b">
-                                <th scope="row" class="px-6 py-4 font-calibri whitespace-nowrap">Ivan Petrov</th>
-                                <td class="px-6 py-4 font-calibri">Software Engineer</td>
-                                <td class="px-6 py-4 font-calibri">IT</td>
-                                <td class="px-6 py-4 font-calibri">ivan.petrov@sinksrus.com</td>
-                                <td class="px-6 py-4 font-calibri">555-6789</td>
-                                <td class="px-6 py-4 font-calibri">
+                                <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">Ivan Petrov</th>
+                                <td class="px-6 py-4 font-serif">Software Engineer</td>
+                                <td class="px-6 py-4 font-serif">IT</td>
+                                <td class="px-6 py-4 font-serif">ivan.petrov@sinksrus.com</td>
+                                <td class="px-6 py-4 font-serif">555-6789</td>
+                                <td class="px-6 py-4 font-serif">
                                     <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-1">View</button>
                                 </td>
                             </tr>
                             <tr class="bg-gray-50 border-b">
-                                <th scope="row" class="px-6 py-4 font-calibri whitespace-nowrap">Pedro Los Banos</th>
-                                <td class="px-6 py-4 font-calibri">Marketing Manager</td>
-                                <td class="px-6 py-4 font-calibri">Marketing</td>
-                                <td class="px-6 py-4 font-calibri">pedro_los_banos@sinksrus.com</td>
-                                <td class="px-6 py-4 font-calibri">555-6789</td>
-                                <td class="px-6 py-4 font-calibri">
+                                <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">Pedro Los Banos</th>
+                                <td class="px-6 py-4 font-serif">Marketing Manager</td>
+                                <td class="px-6 py-4 font-serif">Marketing</td>
+                                <td class="px-6 py-4 font-serif">pedro_los_banos@sinksrus.com</td>
+                                <td class="px-6 py-4 font-serif">555-6789</td>
+                                <td class="px-6 py-4 font-serif">
                                     <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-2">View</button>
                                 </td>
                             </tr>
                             <tr class="bg-white border-b">
-                                <th scope="row" class="px-6 py-4 font-calibri whitespace-nowrap">Ana Gomez</th>
-                                <td class="px-6 py-4 font-calibri">HR Specialist</td>
-                                <td class="px-6 py-4 font-calibri">HR</td>
-                                <td class="px-6 py-4 font-calibri">ana.gomez@sinksrus.com</td>
-                                <td class="px-6 py-4 font-calibri">555-1526</td>
-                                <td class="px-6 py-4 font-calibri">
+                                <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">Ana Gomez</th>
+                                <td class="px-6 py-4 font-serif">HR Specialist</td>
+                                <td class="px-6 py-4 font-serif">HR</td>
+                                <td class="px-6 py-4 font-serif">ana.gomez@sinksrus.com</td>
+                                <td class="px-6 py-4 font-serif">555-1526</td>
+                                <td class="px-6 py-4 font-serif">
                                     <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-3">View</button>
                                 </td>
                             </tr>
                             <tr class="bg-gray-50 border-b">
-                                <th scope="row" class="px-6 py-4 font-calibri whitespace-nowrap">John Wu</th>
-                                <td class="px-6 py-4 font-calibri">Sales Associate</td>
-                                <td class="px-6 py-4 font-calibri">Sales</td>
-                                <td class="px-6 py-4 font-calibri">john.wu@sinksrus.com</td>
-                                <td class="px-6 py-4 font-calibri">555-6925</td>
-                                <td class="px-6 py-4 font-calibri">
+                                <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">John Wu</th>
+                                <td class="px-6 py-4 font-serif">Sales Associate</td>
+                                <td class="px-6 py-4 font-serif">Sales</td>
+                                <td class="px-6 py-4 font-serif">john.wu@sinksrus.com</td>
+                                <td class="px-6 py-4 font-serif">555-6925</td>
+                                <td class="px-6 py-4 font-serif">
                                     <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-4">View</button>
                                 </td>
                             </tr>
                             <tr class="bg-white border-b">
-                                <th scope="row" class="px-6 py-4 font-calibri whitespace-nowrap">Emma Wilson</th>
-                                <td class="px-6 py-4 font-calibri">CEO</td>
-                                <td class="px-6 py-4 font-calibri">Admin</td>
-                                <td class="px-6 py-4 font-calibri">emma@sinksrus.com</td>
-                                <td class="px-6 py-4 font-calibri">555-1111</td>
-                                <td class="px-6 py-4 font-calibri">
+                                <th scope="row" class="px-6 py-4 font-serif whitespace-nowrap">Emma Wilson</th>
+                                <td class="px-6 py-4 font-serif">CEO</td>
+                                <td class="px-6 py-4 font-serif">Admin</td>
+                                <td class="px-6 py-4 font-serif">emma@sinksrus.com</td>
+                                <td class="px-6 py-4 font-serif">555-1111</td>
+                                <td class="px-6 py-4 font-serif">
                                     <button class="bg-cyan-700 text-white px-4 py-2 rounded" data-toggle="modal" data-target="#modal-5">View</button>
                                 </td>
                             </tr>
@@ -126,16 +126,16 @@
         <!-- Employee Modals -->
         <div id="modal-1" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex justify-center items-center p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-                <h2 class="text-2xl font-calibri font-calibri mb-4">Employee Details</h2>
+                <h2 class="text-2xl font-serif font-serif mb-4">Employee Details</h2>
                 <div class="space-y-2">
-                    <p class="font-calibri font-calibri">Name: Ivan Petrov</p>
-                        <p class="font-calibri font-calibri">Job Title: Software Engineer</p>
-                        <p class="font-calibri font-calibri">Department: IT </p>
-                        <p class="font-calibri font-calibri">Email: ivan.petrov@sinksrus.com</p>
-                        <p class="font-calibri font-calibri">Contact no.: 555-6789</p>
-                        <p class="font-calibri font-calibri">Address: 12 Red Square, Moscow</p>
-                        <p class="font-calibri font-calibri">Sex: Male</p>
-                        <p class="font-calibri font-calibri">Marital Status: Single</p>
+                    <p class="font-serif font-serif">Name: Ivan Petrov</p>
+                        <p class="font-serif font-serif">Job Title: Software Engineer</p>
+                        <p class="font-serif font-serif">Department: IT </p>
+                        <p class="font-serif font-serif">Email: ivan.petrov@sinksrus.com</p>
+                        <p class="font-serif font-serif">Contact no.: 555-6789</p>
+                        <p class="font-serif font-serif">Address: 12 Red Square, Moscow</p>
+                        <p class="font-serif font-serif">Sex: Male</p>
+                        <p class="font-serif font-serif">Marital Status: Single</p>
                 </div>
                 <div class="mt-6 text-center">
                     <button class="bg-red-500 text-white px-6 py-2 rounded" onclick="closeModal()">Close</button>
@@ -145,16 +145,16 @@
 
         <div id="modal-2" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex justify-center items-center p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-                <h2 class="text-2xl font-calibri font-calibri mb-4">Employee Details</h2>
+                <h2 class="text-2xl font-serif font-serif mb-4">Employee Details</h2>
                 <div class="space-y-2">
-                    <p class="font-calibri font-calibri">Name: Pedro Los Banos</p>
-                        <p class="font-calibri font-calibri">Job Title: Marketing Manager</p>
-                        <p class="font-calibri font-calibri">Department: Marketing</p>
-                        <p class="font-calibri font-calibri">Email: pedro_los_banos@sinksrus.com</p>
-                        <p class="font-calibri font-calibri">Contact no.:</p>
-                        <p class="font-calibri font-calibri">Address: 123 Mabini St.</p>
-                        <p class="font-calibri font-calibri">Sex: Male</p>
-                        <p class="font-calibri font-calibri">Marital Status: Married</p>
+                    <p class="font-serif font-serif">Name: Pedro Los Banos</p>
+                        <p class="font-serif font-serif">Job Title: Marketing Manager</p>
+                        <p class="font-serif font-serif">Department: Marketing</p>
+                        <p class="font-serif font-serif">Email: pedro_los_banos@sinksrus.com</p>
+                        <p class="font-serif font-serif">Contact no.:</p>
+                        <p class="font-serif font-serif">Address: 123 Mabini St.</p>
+                        <p class="font-serif font-serif">Sex: Male</p>
+                        <p class="font-serif font-serif">Marital Status: Married</p>
                 </div>
                 <div class="mt-6 text-center">
                     <button class="bg-red-500 text-white px-6 py-2 rounded" onclick="closeModal()">Close</button>
@@ -164,16 +164,16 @@
 
         <div id="modal-3" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex justify-center items-center p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-                <h2 class="text-2xl font-calibri font-calibri mb-4">Employee Details</h2>
+                <h2 class="text-2xl font-serif font-serif mb-4">Employee Details</h2>
                 <div class="space-y-2">
-                    <p class="font-calibri font-calibri">Name: Ana Gomez</p>
-                    <p class="font-calibri font-calibri">Job Title: HR Specialist</p>
-                    <p class="font-calibri font-calibri">Department: HR</p>
-                    <p class="font-calibri font-calibri">Email: ana.gomez@sinksrus.com</p>
-                    <p class="font-calibri font-calibri">Contact no.: 555-1526</p>
-                    <p class="font-calibri font-calibri">Address: </p>
-                    <p class="font-calibri font-calibri">Sex: Female</p>
-                    <p class="font-calibri font-calibri">Marital Status: Divorced</p>
+                    <p class="font-serif font-serif">Name: Ana Gomez</p>
+                    <p class="font-serif font-serif">Job Title: HR Specialist</p>
+                    <p class="font-serif font-serif">Department: HR</p>
+                    <p class="font-serif font-serif">Email: ana.gomez@sinksrus.com</p>
+                    <p class="font-serif font-serif">Contact no.: 555-1526</p>
+                    <p class="font-serif font-serif">Address: </p>
+                    <p class="font-serif font-serif">Sex: Female</p>
+                    <p class="font-serif font-serif">Marital Status: Divorced</p>
                 </div>
                 <div class="mt-6 text-center">
                     <button class="bg-red-500 text-white px-6 py-2 rounded" onclick="closeModal()">Close</button>
@@ -183,16 +183,16 @@
 
         <div id="modal-4" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex justify-center items-center p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-                <h2 class="text-2xl font-calibri font-calibri mb-4">Employee Details</h2>
+                <h2 class="text-2xl font-serif font-serif mb-4">Employee Details</h2>
                 <div class="space-y-2">
-                    <p class="font-calibri font-calibri">Name: John Wu</p>
-                    <p class="font-calibri font-calibri">Job Title: Sales Associate</p>
-                    <p class="font-calibri font-calibri">Department: Sales</p>
-                    <p class="font-calibri font-calibri">Email: john.wu@sinksrus.com</p>
-                    <p class="font-calibri font-calibri">Contact no.: 555-6925</p>
-                    <p class="font-calibri font-calibri">Address: 456 Rizal St.</p>
-                    <p class="font-calibri font-calibri">Sex: Male</p>
-                    <p class="font-calibri font-calibri">Marital Status: Single</p>
+                    <p class="font-serif font-serif">Name: John Wu</p>
+                    <p class="font-serif font-serif">Job Title: Sales Associate</p>
+                    <p class="font-serif font-serif">Department: Sales</p>
+                    <p class="font-serif font-serif">Email: john.wu@sinksrus.com</p>
+                    <p class="font-serif font-serif">Contact no.: 555-6925</p>
+                    <p class="font-serif font-serif">Address: 456 Rizal St.</p>
+                    <p class="font-serif font-serif">Sex: Male</p>
+                    <p class="font-serif font-serif">Marital Status: Single</p>
                 </div>
                 <div class="mt-6 text-center">
                     <button class="bg-red-500 text-white px-6 py-2 rounded" onclick="closeModal()">Close</button>
@@ -202,16 +202,16 @@
 
         <div id="modal-5" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex justify-center items-center p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-                <h2 class="text-2xl font-calibri font-calibri mb-4">Employee Details</h2>
+                <h2 class="text-2xl font-serif font-serif mb-4">Employee Details</h2>
                 <div class="space-y-2">
-                    <p class="font-calibri font-calibri">Name: Emma Wilson</p>
-                    <p class="font-calibri font-calibri">Job Title: CEO</p>
-                    <p class="font-calibri font-calibri">Department: Admin</p>
-                    <p class="font-calibri font-calibri">Email: emma@sinksrus.com</p>
-                    <p class="font-calibri font-calibri">Contact no.: 555-1111</p>
-                    <p class="font-calibri font-calibri">Address: </p>
-                    <p class="font-calibri font-calibri">Sex: Female</p>
-                    <p class="font-calibri font-calibri">Marital Status: Married</p>
+                    <p class="font-serif font-serif">Name: Emma Wilson</p>
+                    <p class="font-serif font-serif">Job Title: CEO</p>
+                    <p class="font-serif font-serif">Department: Admin</p>
+                    <p class="font-serif font-serif">Email: emma@sinksrus.com</p>
+                    <p class="font-serif font-serif">Contact no.: 555-1111</p>
+                    <p class="font-serif font-serif">Address: </p>
+                    <p class="font-serif font-serif">Sex: Female</p>
+                    <p class="font-serif font-serif">Marital Status: Married</p>
                 </div>
                 <div class="mt-6 text-center">
                     <button class="bg-red-500 text-white px-6 py-2 rounded" onclick="closeModal()">Close</button>
